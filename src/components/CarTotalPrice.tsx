@@ -10,7 +10,13 @@ const CarTotalPrice = () => {
       .reduce((acc, car) => acc + car.cost, 0),
   )
 
-  return <div> total:{total}</div>
+  return (
+    <div className="text-xl font-semibold leading-none tracking-tight flex items-center ml-4">
+      <div>Total</div>
+      <div className="mx-2">-</div>
+      <div className="mr-auto ">${total}</div>
+    </div>
+  )
 }
 
 export default CarTotalPrice

@@ -12,7 +12,18 @@ export interface CarsState {
 }
 
 const initialState: CarsState = {
-  list: [],
+  list: [
+    {
+      id: 1,
+      name: 'Tesla',
+      cost: 241.57,
+    },
+    {
+      id: 2,
+      name: 'Audi',
+      cost: 101,
+    },
+  ],
   searchTerm: '',
 }
 
